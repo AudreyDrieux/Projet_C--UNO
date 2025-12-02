@@ -9,7 +9,7 @@
  */
 
 #include "Card.hpp"
-#include "/users/home/28624202/Documents/Projet_UNO/include/Pioche.hpp" 
+#include "/users/home/28624202/Documents/Projet_C--UNO/include/Pioche.hpp" 
 #include <list>
 
 class Joueur {
@@ -47,7 +47,7 @@ class Joueur {
 		 * \return un entier non signé
 		 */
 
-		size_t nb_cartes_joueur() const {return jeu_cartes_joueur.size();};
+		std::size_t nb_cartes_joueur() const {return jeu_cartes_joueur.size();};
 
 		/*!
 		 * \brief Accesseur à l'attribut privé numero
