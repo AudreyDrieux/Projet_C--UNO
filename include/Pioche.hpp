@@ -9,7 +9,7 @@
  */
 
 #include <list>
-#include <random>
+#include <algorithm>
 #include "/users/home/28624202/Documents/Projet_C--UNO/include/Card.hpp"
 
 class Pioche {
@@ -45,6 +45,15 @@ class Pioche {
 
 		Card piocher();
 
+		/*!
+		 * \brief Taille de la pioche
+		 *
+		 * Méthode qui retourne la taille de la pioche
+		 *
+		 * \return un entier non signé
+		 */
+
+		std::size_t size() const {return jeu_cartes.size();};
 
 };
 
