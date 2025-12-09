@@ -21,11 +21,9 @@ void Joueur::distribution(int nb_cartes, Pioche & pioche) {
 	}
 }
 
-Card Joueur::retire_carte(Card const & carte) {
+void Joueur::retire_carte(list<Card>::iterator const it) {
 
-	const auto it = find(jeu_cartes_joueur.begin(), jeu_cartes_joueur.end(), carte);
-	
-	if (it != jeu_cartes_joueur.end())  return carte;
+	jeu_cartes_joueur.erase(it);
 
 }
 
