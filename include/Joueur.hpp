@@ -8,7 +8,7 @@
  * \version 0.1
  */
 
-#include "Card.hpp"
+#include "/users/home/28624202/Documents/Projet_C--UNO/include/Card.hpp"
 #include "/users/home/28624202/Documents/Projet_C--UNO/include/Pioche.hpp" 
 #include <list>
 
@@ -27,7 +27,7 @@ class Joueur {
 		 * \param jeu_cartes_ini : jeu de cartes initial du joueur
 		 */
 
-		Joueur(int num, std::list<Card> jeu_cartes_ini): numero(num), jeu_cartes_joueur(jeu_cartes_ini) {};
+		Joueur(int num, std::list<Card> jeu_cartes_ini = {}): numero(num), jeu_cartes_joueur(jeu_cartes_ini) {};
 		
 		/*!
 		 * \brief Afficher un joueur
@@ -80,6 +80,18 @@ class Joueur {
 		 */
 
 		void distribution(int nb_cartes, Pioche & pioche);
+
+		/*!
+		 * \brief Retirer une carte du jeu de cartes d'un joueur
+		 *
+		 * Méthode qui permet d'enlever une carte du jeu de cartes d'un
+		 * joueur
+		 *
+		 * \param it : itérateur qui pointe vers la carte
+		 *
+		 */
+
+		void retire_carte(std::list<Card>::iterator const it);
 
 };
 
