@@ -6,13 +6,20 @@ using namespace std;
 
 Pioche::Pioche() {
 
-	list<string> Couleur{"rouge", "vert", "jaune", "bleu"};
+	list<string> Couleur{"B", "J", "R", "V"};
 	for (string const & color : Couleur)  {
 
-		for (int i = 1; i <= 23; i++) {
+		for (int i = 1; i <= 19; i++) {
 
-			Card carte(color, i%12);
-			jeu_cartes.push_front(carte);
+			string spec = to_string(i%10);
+			Card carteord(color,spec);
+			jeu_cartes.push_front(carteord);
+		}
+
+		for (int i = 1; i <= 2; i++) {
+
+			Card cartespec1(color, "+2");
+			Card cartespec2(color, "p");
 		}
 	}
 }
