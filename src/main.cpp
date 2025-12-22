@@ -28,8 +28,6 @@ int main(){
     Card current_card = P.piocher(); //current_card :  carte au dessus du tas de cartes jouées
     std::list<Card> talon{current_card}; // talon: tas des cartes déjà jouées, current_card au dessus du tas
     
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! P.size();
-    
     //début de la partie:
     //tant que lrs deux joueurs ont des cartes et que la pioche n'est pas vide
     while(Player.nb_cartes_joueur()!=0 && Ordi.nb_cartes_joueur()!=0 && P.size()!=0){
