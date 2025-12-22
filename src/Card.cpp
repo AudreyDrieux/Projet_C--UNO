@@ -2,20 +2,20 @@
 #include "Card.hpp"
 
 void Card::affiche()const{
-    switch(num){
-        case 10:
+    switch(spec){
+        case "p":
             std::cout << "[" << color << ", passe ton tour ]" << std::endl;
             break;
-        case 11:
+        case "+2":
             std::cout << "[ " << color <<", +2 ]" << std::endl;
             break;
         default:                    
-            std::cout << "[" << color << ", " << num  << "]" << std::endl; 
+            std::cout << "[" << color << ", " << spec  << "]" << std::endl; 
         };
     };
 
-int Card::numero()const{
-    return num;
+std::string Card::numero()const{
+    return spec;
 };
 
 std::string Card::colorcard()const{
@@ -23,7 +23,7 @@ std::string Card::colorcard()const{
 };
 
 bool Card::superpose(const Card& C2)const{
-    int numC2=C2.numero();
+    std::string numC2=C2.numero();
     std::string col=C2.colorcard();
-    return (numC2 == num) || (color==C2.color);
+    return (numC2 == spec) || (color==C2.color);
 };
