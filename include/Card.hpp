@@ -25,7 +25,7 @@ class Card{
      */
     private:
         std::string color;  /*< couleur de la carte*/
-        int num;    /*<numéro de la carte: 0 à 9 pour une standard, 10,11 pour une spéciale*/
+        std::string spec;    /*<numéro de la carte: 0 à 9 pour une standard, 10,11 pour une spéciale*/
     public:
         /**
          * \brief Constructeur
@@ -34,7 +34,7 @@ class Card{
          * \param color1 : couleur de la carte
          * \param num1 : numéro de la carte (10 pour un passer le tour, 11 pour un +2)
          */
-        Card(std::string color1, int num1): color(color1), num(num1){};
+        Card(std::string color1, std::string num1): color(color1), spec(num1){};
         
         /**
          * \brief affichage d'une carte
@@ -58,7 +58,7 @@ class Card{
          * accesseur au numéro de la carte
          * \return le numéro de la carte
          */
-        int numero()const;
+        std::string numero()const;
 
         /**
          * \brief couleur de la carte
