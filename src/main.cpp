@@ -5,6 +5,7 @@
 #include <list>
 #include <ctime>
 #include <random>
+#include <chrono>
 
 int main(){
     
@@ -30,9 +31,10 @@ int main(){
     //début de la partie:
     //tant que les deux joueurs ont des cartes et que la pioche n'est pas vide
     while(Player.nb_cartes_joueur()!=0 && Ordi.nb_cartes_joueur()!=0 && P.size()!=0){
-        
+    
         //cas jeu de l'ordinateur
         if(current_player==1){ 
+            std::cout << "Adversaire: " <<  Ordi.nb_cartes_joueur() << " cartes" << std::endl;
             //on copie le jeu de cartes de l'ordinateur pour le parcourir
             std::list<Card> jeu = Ordi.get_jeu_cartes();
             //on cherche une carte que l'ordinateur peut poser au hasard dans son jeu
@@ -44,12 +46,37 @@ int main(){
                 std::cout << "jeu adversaire: ";
                 current_card.affiche();
                 talon.push_back(*it);
+                std::cout << "Adversaire: " <<  Ordi.nb_cartes_joueur() << " cartes" << std::endl;
+
+                if(Ordi.nb_cartes_joueur() == 1){
+                    //on laisse 7 secondes pour que l'adversaire contre le UNO
+                    //On lance le chrono
+                    auto depart = std::chrono::steady_clock::now();
+    
+                    std::string contre_uno;
+                    std::cin >> contre_uno;
+    
+                    //On arrête le chrono
+                    auto fin = std::chrono::steady_clock::now();
+    
+                    //On calcule le temps mis en secondes
+                    std::chrono::duration<double> secondes_mises = fin - depart;
+
+                    if (((contre_uno == "contre UNO") ||(contre_uno == "contre uno")) && secondes_mises.count() <= 7.0) {
+                        std::cout << "Contre UNO, votre adversaire pioche 2 cartes" << std::endl;
+                        Ordi.distribution(2,P);
+                    } else {
+                        std::cout << "adversaire: UNO" << std::endl;
+                    }
+                } 
+
                 //si on a pas posé une carte spéciale ("+2" ou "passe tour"): le prochain tour est à l'adversaire
                 if((current_card.numero() != "+2") && (current_card.numero() != "p")){ 
                         current_player = 0;
                     }
             }else{
                 //si on a pas trouvé de carte a jouer
+                std::cout << "*adversaire pioche*" << std::endl;
                 Ordi.distribution(1, P); // on pioche une carte
                 Card new_card = Ordi.get_jeu_cartes().front(); 
                 if(new_card.superpose(current_card) == 1){ 
@@ -59,6 +86,29 @@ int main(){
                     Ordi.retire_carte(new_card); // on retire la carte jouée du jeu du joueur
                     std::cout << "jeu adversaire : ";
                     current_card.affiche();
+                    std::cout << "Adversaire: " <<  Ordi.nb_cartes_joueur() << " cartes" << std::endl;
+                    if(Ordi.nb_cartes_joueur() == 1){
+                    //on laisse 7 secondes pour que l'adversaire contre le UNO
+                    //On lance le chrono
+                    auto depart = std::chrono::steady_clock::now();
+    
+                    std::string contre_uno;
+                    std::cin >> contre_uno;
+    
+                    //On arrête le chrono
+                    auto fin = std::chrono::steady_clock::now();
+    
+                    //On calcule le temps mis en secondes
+                    std::chrono::duration<double> secondes_mises = fin - depart;
+
+                    if (((contre_uno == "contre UNO") ||(contre_uno == "contre uno")) && secondes_mises.count() <= 7.0) {
+                        std::cout << "Contre UNO, votre adversaire pioche 2 cartes" << std::endl;
+                        Ordi.distribution(2,P);
+                    } else {
+                        std::cout << "adversaire: UNO" << std::endl;
+                    }
+                }
+
                     if((current_card.numero() != "+2") && (current_card.numero() != "p")){
                         current_player = 0;
                     }
@@ -103,6 +153,29 @@ int main(){
                                 talon.push_front(new_cardJ); //on l'ajoute au dessus du tas des cartes joué
                                 current_card = new_cardJ; //maj de la carte courante
                                 Player.retire_carte(new_cardJ);
+                                if(Player.nb_cartes_joueur() == 1){
+                                    //on laisse 5 secondes pour que le joueur dise UNO
+                                    //On lance le chrono
+                                    auto depart = std::chrono::steady_clock::now();
+    
+                                    std::string uno;
+                                    std::cin >> uno;
+    
+                                    //On arrête le chrono
+                                    auto fin = std::chrono::steady_clock::now();
+    
+                                    //On calcule le temps mis en secondes
+                                    std::chrono::duration<double> secondes_mises = fin - depart;
+
+                                    if (((uno == "UNO") ||(uno == "uno")) && secondes_mises.count() <= 5.0) {
+                                        std::cout << "UNO" << std::endl;
+                    
+                                    } else {
+                                        std::cout << "adversaire: contre UNO" << std::endl;
+                                        std::cout << "Vous devez piocher 2 cartes" << std::endl;
+                                        Player.distribution(2, P);
+                    }
+                }
                                 if((current_card.numero() != "+2") && (current_card.numero() != "p")){ 
                                     current_player = 1;
                                 }
@@ -132,6 +205,29 @@ int main(){
                     current_card = chosen;
                     talon.push_front(chosen);
                     Player.retire_carte(chosen);
+                    if(Player.nb_cartes_joueur() == 1){
+                                    //on laisse 5 secondes pour que le joueur dise UNO
+                                    //On lance le chrono
+                                    auto depart = std::chrono::steady_clock::now();
+    
+                                    std::string uno;
+                                    std::cin >> uno;
+    
+                                    //On arrête le chrono
+                                    auto fin = std::chrono::steady_clock::now();
+    
+                                    //On calcule le temps mis en secondes
+                                    std::chrono::duration<double> secondes_mises = fin - depart;
+
+                                    if (((uno == "UNO") ||(uno == "uno")) && secondes_mises.count() <= 5.0) {
+                                        std::cout << "UNO" << std::endl;
+                    
+                                    } else {
+                                        std::cout << "adversaire: contre UNO" << std::endl;
+                                        std::cout << "Vous devez piocher 2 cartes" << std::endl;
+                                        Player.distribution(2, P);
+                    }
+                }
                     std::cout << "talon : ";
                     current_card.affiche();
                     if((current_card.numero() != "+2") && (current_card.numero() != "p")){ 
@@ -141,10 +237,11 @@ int main(){
                 }else{
                     //si pas de carte valide dans le jeu du joueur
                     //il pioche
+                    std::cout << "Vous piochez" << std::endl;
                     Player.distribution(1, P);
                     Card new_cardJ = Player.get_jeu_cartes().front();
                     if(new_cardJ.superpose(current_card) == 1){ 
-                        //si la carte picohée est valide
+                        //si la carte piochée est valide
                         std::cout << "carte piochée: ";
                         new_cardJ.affiche();
                         std::cout << "Voulez-vous jouer cette carte? (non: 0, oui:1)" << std::endl;
@@ -154,6 +251,29 @@ int main(){
                             talon.push_front(new_cardJ); //on l'ajoute au dessus du tas des cartes joué
                             current_card = new_cardJ; //maj de la carte courante
                             Player.retire_carte(new_cardJ);
+                            if(Player.nb_cartes_joueur() == 1){
+                                    //on laisse 5 secondes pour que le joueur dise UNO
+                                    //On lance le chrono
+                                    auto depart = std::chrono::steady_clock::now();
+    
+                                    std::string uno;
+                                    std::cin >> uno;
+    
+                                    //On arrête le chrono
+                                    auto fin = std::chrono::steady_clock::now();
+    
+                                    //On calcule le temps mis en secondes
+                                    std::chrono::duration<double> secondes_mises = fin - depart;
+
+                                    if (((uno == "UNO") ||(uno == "uno")) && secondes_mises.count() <= 5.0) {
+                                        std::cout << "UNO" << std::endl;
+                    
+                                    } else {
+                                        std::cout << "adversaire: contre UNO" << std::endl;
+                                        std::cout << "Vous devez piocher 2 cartes" << std::endl;
+                                        Player.distribution(2, P);
+                    }
+                }
                             if((current_card.numero() != "+2") && (current_card.numero() != "p")){ 
                                 current_player = 1;
                             }
