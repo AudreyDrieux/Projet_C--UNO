@@ -8,8 +8,8 @@
  * \version 0.1
  */
 
-#include "/users/home/28624202/Documents/Projet_C--UNO/include/Card.hpp"
-#include "/users/home/28624202/Documents/Projet_C--UNO/include/Pioche.hpp" 
+#include "Card.hpp"
+#include "Pioche.hpp" 
 #include <list>
 
 class Joueur {
@@ -92,7 +92,18 @@ class Joueur {
 		 */
 
 		void retire_carte(std::list<Card>::iterator const it);
+		
+		/*!
+		 * \brief Retirer une carte du jeu de cartes d'un joueur
+		 *
+		 * Méthode qui permet d'enlever une carte du jeu de cartes d'un
+		 * joueur
+		 *
+		 * \param card : carte à retirer
+		 *
+		 */
 
+		void retire_carte(const Card&);
 };
 
 #endif
