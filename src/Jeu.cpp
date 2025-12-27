@@ -1,11 +1,13 @@
 #include <iostream>
 #include <chrono>
 #include <ctime>
+#include <limits>
 #include "Jeu.hpp"
               
     
 void Jeu::UnoCarteOrdi(){
     //on laisse 10 secondes pour que l'adversaire contre le UNO
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //pour ignorer le \n 
     //On lance le chrono
     auto depart = std::chrono::steady_clock::now();
     
@@ -203,7 +205,6 @@ Card Jeu::TourPlayer(){
         }else{
            return Card("0", "0"); 
         }
-    //return Card("0", "0");
     }
 }
 
