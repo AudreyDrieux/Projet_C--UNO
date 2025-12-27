@@ -10,7 +10,7 @@
 
 #include <list>
 #include <algorithm>
-#include "/users/home/28624202/Documents/Projet_C--UNO/include/Card.hpp"
+#include "Card.hpp"
 
 class Pioche {
 
@@ -24,16 +24,6 @@ class Pioche {
 		 */
 
 		Pioche();
-
-		/*!
-		 * \brief Mélanger les cartes de la pioche
-		 *
-		 * Méthode qui permet de mélanger les cartes de la pioche
-		 *
-		 * \param gen : un générateur de nombres pseudo-aléatoires
-		 */
-
-		template<class RandomGenerator> void melange_cartes(RandomGenerator & gen);
 
 		/*!
 		 * \brief Piocher une carte dans la pioche
@@ -56,12 +46,5 @@ class Pioche {
 		std::size_t size() const {return jeu_cartes.size();};
 
 };
-
-template<class RandomGenerator>
-void Pioche::melange_cartes(RandomGenerator & gen) {
-
-	shuffle(jeu_cartes.begin(), jeu_cartes.end(), gen);
-
-}
 
 #endif
