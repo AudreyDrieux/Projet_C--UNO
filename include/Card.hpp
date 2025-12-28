@@ -6,11 +6,15 @@
  * \brief définition des cartes
  * \author A. Margot
  * \version 0.1
- * \date 26/12/2025
+ * \date 27/11/2025
  */
 
 #include <iostream>
 #include <string>
+
+
+
+
 
 class Card{
     /**
@@ -21,7 +25,7 @@ class Card{
      */
     private:
         std::string color;  /*< couleur de la carte*/
-        std::string spec;    /*<numéro de la carte: 0 à 9 pour une standard,  '+2' ou 'p' pour une spéciale*/
+        std::string spec;    /*<numéro de la carte: 0 à 9 pour une standard, '+2' ou 'p' pour une spéciale*/
     public:
         /**
          * \brief Constructeur
