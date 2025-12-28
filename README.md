@@ -33,4 +33,23 @@ Lorsqu'une carte '+2' est jouée, l'adversaire pioche 2 cartes.
 Lorsqu'une carte 'passer' est jouée, le joueur rejoue.  
 Lorsqu'une carte '+4' est jouée, le joueur choisit la couleur qu'il souhaite jouer et rejoue. 
 Une carte '+4' peut se jouer n'importe quand. En revanche, toutes les autres cartes  ne peuvent se jouer que lorsqu'au moins la couleur ou le numéro/la spécialité coïncide avec celui de la carte au sommet du talon.  
+
+Au début de chaque tour, le talon s'affiche. Par exemple:  
+talon : [J, 1]  
+  
+#### Joueur interactif
+Si c'est à votre tour, toutes vos cartes s'affichent.  
+Si au moins l'une de vos cartes peut être jouée, il vous est demandé d'en sélectionner une: vous devez commencer par choisir la couleur: (**J**, **R**, **V**, **B** ou **N**) puis le nombre/la spécialité (**0** à **9**, **+2**, **p** ou **+4**). Si elle est valide, elle sera posée sur le talon et s'il ne s'agit pas d'une carte "spéciale", le tour sera passé à l'ordinateur.  
+Si vous avez une carte valide mais que vous souhaitez tout de même passer votre tour, tapez "pass" lorsque la couleur vous est demandée.  
+Si vous n'avez pas de carte valide, vous piochez une carte. Si la carte piochée est valide, il vous sera demandé si vous souhaitez la jouer: tapez 1 dans le terminal si vous souhaitez la jouer, 0 sinon. Si la carte piochée n'est pas valide, le tour sera passée à votre adversaire.  
+
+#### Jeu de l'ordinateur
+Lorsque c'est à l'ordinateur de jouer, s'il possède une carte valide, le nombre de carte qu'il possède s'affiche puis la carte qu'il joue. S'il ne possède pas de carte valide, il pioche et *adversaire pioche* est affiché
+
+#### 1 carte restante
+Si vous ne possedez plus qu'une seule carte, vous disposez de 10 secondes pour écrire dans le terminal "UNO" ou "uno". Si vous avez mis plus de 10 secondes, votre adversaire contre votre UNO et vous devez piocher 2 cartes.  
+Si votre adversaire ne poosède plus qu'une seule carte, vous disposez de 10 secondes pour écrire "contre UNO"  ou "contre uno". Si vous avez mis moins de 10 secondes, votre adversaire pioche 2 cartes. 
+  
+#### Fin de la partie
+La partie s'arrête lorsque l'un des deux joueurs ne possède plus aucune carte ou lorsque la pioche est vide.
   
