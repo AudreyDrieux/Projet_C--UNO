@@ -8,15 +8,15 @@ Pour installer le programme, téléchargez l'ensemble du contenu de la branche m
 ## Tests
 Les tests utilisent Catch2.
 1. Placez votre terminal à la racine du projet.
-2. tapez dans votre terminal:    
-- __Windows:__ `cmake -B build -G "MinGW Makefiles"`  __Linux/Mac:__  cmake -B build
-- Pour lancer les tests, utilisez  
-`cmake --build build --target **test_card**`
-__Windows:__ `./build/test_card.exe`  __Linux/Mac:__ ./build/test_card
-`cmake --build build --target **test_pioche**`
-__Windows:__`./build/test_pioche.exe`  __Linux/Mac:__ ./build/test_pioche
-`cmake --build build --target **test_joueur**` 
-__Windows:__`./build/test_joueur.exe` __Linux/Mac:__ ./build/test_joueur   
+2. tapez dans votre terminal:     
+- __Windows:__ `cmake -B build -G "MinGW Makefiles"`  __Linux/Mac:__  `cmake -B build`  
+- Pour lancer les tests, utilisez    
+`cmake --build build --target test_card`  
+__Windows:__ `./build/test_card.exe`  __Linux/Mac:__ `./build/test_card`
+`cmake --build build --target test_pioche`  
+__Windows:__`./build/test_pioche.exe`  __Linux/Mac:__ `./build/test_pioche`
+`cmake --build build --target test_joueur`   
+__Windows:__`./build/test_joueur.exe` __Linux/Mac:__ `./build/test_joueur`   
 
 ## Documentation
 Pour générer la documentation technique du projet :
