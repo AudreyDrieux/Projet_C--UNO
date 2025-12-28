@@ -1,4 +1,6 @@
-#include <catch2/catch_test_macros.hpp>
+//#include <catch2/catch_test_macros.hpp>
+#define CATCH_CONFIG_MAIN
+#include "../include/catch.hpp"
 #include "../include/Card.hpp"
 
 TEST_CASE("numéro") {
