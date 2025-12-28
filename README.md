@@ -1,23 +1,35 @@
 # Projet_C--UNO
 
-### Installation
-Pour installer le programme, téléchargez l'ensemble du contenu de la branche main.
+Le projet utilise CMake. Aucune bibliothèque externe n'est requise.
 
-### Tests
-Catch2 v3 doit être installé pour compiler les tests.
-1. Placez votre terminal dans le dossier qui contient l'ensemble du programme.
+## Installation
+Pour installer le programme, téléchargez l'ensemble du contenu de la branche main.
+  
+## Tests
+Les tests utilisent Catch2.
+1. Placez votre terminal à la racine du projet.
 2. tapez dans votre terminal:    
-- `cmake -B build -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER="C:/MinGW/bin/g++.exe"`    
+- __Windows:__ `cmake -B build -G "MinGW Makefiles"`  __Linux/Mac:__  cmake -B build
 - Pour lancer les tests, utilisez  
-`cmake --build build --target **test_card**`  
-`cmake --build build --target **test_pioche**`  
-`cmake --build build --target **test_joueur**`     
+`cmake --build build --target **test_card**`
+__Windows:__ `./build/test_card.exe`  __Linux/Mac:__ ./build/test_card
+`cmake --build build --target **test_pioche**`
+__Windows:__`./build/test_pioche.exe`  __Linux/Mac:__ ./build/test_pioche
+`cmake --build build --target **test_joueur**` 
+__Windows:__`./build/test_joueur.exe` __Linux/Mac:__ ./build/test_joueur   
+
+## Documentation
+Pour générer la documentation technique du projet :
+1. Installez Doxygen.
+2. Lancez la commande `doxygen Doxyfile`.
+3. Ouvrez `html/index.html` dans votre navigateur.
+ 
 
 ## Partie
 Pour commencer une partie, placez votre terminal dans le dossier qui contient l'ensemble du programme.
 La première fois, executer les commandes `cmake -B build` puis `cmake --build build --target uno_game` dans votre terminal.
 
-Pour démarrer la partie, executer la commande `build\uno_game.exe` .
+Pour démarrer la partie, executer la commande __Windows:__`./build/uno_game.exe` , __Linux/Mac:__ `./build/uno_game` .
 
 ### **Jeu** *sans interface graphique*
 Les cartes sont représentées ainsi: [*couleur*, *numéro*]  
