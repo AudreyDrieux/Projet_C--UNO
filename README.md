@@ -9,9 +9,9 @@ Catch2 v3 doit être installé pour compiler les tests.
 2. tapez dans votre terminal:    
 - `cmake -B build -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER="C:/MinGW/bin/g++.exe"`    
 - Pour lancer les tests, utilisez  
-`cmake --build build --target **test_card**` 
-`cmake --build build --target **test_pioche**`
-`cmake --build build --target **test_joueur**`   
+`cmake --build build --target **test_card**`  
+`cmake --build build --target **test_pioche**`  
+`cmake --build build --target **test_joueur**`     
 
 ## Partie
 Pour commencer une partie, placez votre terminal dans le dossier qui contient l'ensemble du programme.
