@@ -54,25 +54,22 @@ void Jeu::UnoCartePlayer(){
 void Jeu::Partie(){
     //tant que les deux joueurs ont des cartes et que la pioche n'est pas vide
     while(Player.nb_cartes_joueur()!=0 && Ordi.nb_cartes_joueur()!=0 && P.size()!=0){
-        std::cout << "talon : ";
-        current_card.affiche();
-
         if(current_player==1){
-            Card ordi = TourOrdi();
-            if(ordi == Card("0","0")){
-                current_player = 0;
-            }else{
-                std::cout << "jeu adversaire: ";
-                current_card.affiche();
-                std::cout << "Adversaire: " <<  Ordi.nb_cartes_joueur() << " cartes" << std::endl;
-                if(Ordi.nb_cartes_joueur() == 1){ //si l'ordinateur n'a plus qu'une carte en main
-                    UnoCarteOrdi();
-                }
-            special_card();
+        Card ordi = TourOrdi();
+        if(ordi == Card("0","0")){
+            current_player = 0;
+        }else{
+            std::cout << "Adversaire: " <<  Ordi.nb_cartes_joueur() << " cartes" << std::endl;
+            if(Ordi.nb_cartes_joueur() == 1){ //si l'ordinateur n'a plus qu'une carte en main
+                UnoCarteOrdi();
+            }
+        special_card();
             }
         }
 
         else if(current_player == 0){
+            std::cout << "\ntalon: ";
+            current_card.affiche();
             Card player = TourPlayer();
             if(player == Card("0","0") ){
                 current_player = 1;
@@ -128,8 +125,6 @@ Card Jeu::TourOrdi(){
 }
 
 Card Jeu::TourPlayer(){
-    std::cout << "talon: ";
-    current_card.affiche();
     std::cout << "Votre jeu:" << std::endl;
     Player.affiche();
     std::list<Card> jeuJ = Player.get_jeu_cartes();

@@ -31,7 +31,7 @@ std::string Card::colorcard(){
 bool Card::superpose(const Card& C2)const{
     std::string numC2=C2.numero();
     std::string colC2=C2.colorcard();
-    return (spec == numC2) || (color==C2.color);
+    return (spec == numC2) || (color==C2.color) || (color == "N") || (C2.colorcard() == "N") ;
 };
 
 bool Card::operator==(const Card& C)const{
