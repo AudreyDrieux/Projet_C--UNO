@@ -128,8 +128,6 @@ Card Jeu::TourOrdi(){
 }
 
 Card Jeu::TourPlayer(){
-    std::cout << "talon: ";
-    current_card.affiche();
     std::cout << "Votre jeu:" << std::endl;
     Player.affiche();
     std::list<Card> jeuJ = Player.get_jeu_cartes();

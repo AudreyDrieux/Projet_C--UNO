@@ -1,0 +1,104 @@
+#ifndef CARTE__HPP
+#define CARTE__HPP
+
+/**
+ * \file card.hpp
+ * \brief définition des cartes
+ * \author A. Margot
+ * \version 0.1
+ * \date 27/11/2025
+ */
+
+#include <iostream>
+#include <string>
+
+
+
+
+
+class Card{
+    /**
+     * \class Card
+     * \brief classe d'une carte
+     * 
+     * la classe définit une carte et ses "opérations" possibles
+     */
+    private:
+        std::string color;  /*< couleur de la carte*/
+        std::string spec;    /*<numéro de la carte: 0 à 9 pour une standard, '+2' ou 'p' pour une spéciale*/
+    public:
+        /**
+         * \brief Constructeur
+         * 
+         * Constructeur de la classe Card
+         * \param color1 : couleur de la carte
+         * \param num1 : numéro de la carte (10 pour un passer le tour, 11 pour un +2)
+         */
+        Card(std::string color1, std::string num1): color(color1), spec(num1){};
+        
+        /**
+         * \brief affichage d'une carte
+         * 
+         * affichage de la carte
+         */
+        void affiche()const;
+
+        /**
+         * \brief test si la carte jouée est valide
+         * 
+         * indique si la carte est jouable dans le cas où l'autre carte est sur le tas(~"loi" symétrique)
+         * \param carte: la carte sur le tas
+         * \return si la carte est valide a jouer ou non
+         */
+        bool superpose(const Card&) const;
+
+        /**
+         * \brief numéro de la carte
+         * 
+         * accesseur au numéro de la carte
+         * \return le numéro de la carte
+         */
+        std::string numero()const;
+
+        /**
+         * \brief numéro de la carte
+         * 
+         * mutateur du numéro de la carte
+         * \return le numéro de la carte
+         */
+        std::string numero();
+
+        /**
+         * \brief couleur de la carte
+         * 
+         * accesseur à la couleur de la carte
+         * \return la couleur de la carte
+         */
+        std::string colorcard()const;
+
+        /**
+         * \brief couleur de la carte
+         * 
+         * mutateur de la couleur de la carte
+         * \return la couleur de la carte
+         */
+
+        std::string colorcard();
+
+        /**
+         * \brief mêmes cartes
+         * 
+         * \return si les deux cartes sont les mêmes
+         */
+        bool operator==(const Card&)const;
+
+        /**
+         * \brief change la carte
+         * 
+         * \return modifie les attributs privé de la carte courante par ceux de la carte en argument
+         */
+        Card& operator=(const Card&);
+        
+    };
+        
+#endif
