@@ -5,7 +5,7 @@
  * \file Joueur.hpp
  * \brief classe joueur représentant un joueur  
  * \author Audrey Drieux
- * \version 0.1
+ * \version 0.2
  */
 
 #include "Card.hpp"
