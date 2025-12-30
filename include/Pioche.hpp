@@ -5,7 +5,7 @@
  * \file Pioche.hpp
  * \brief classe pioche représentant la pioche du jeu
  * \author Audrey Drieux
- * \version 0.1
+ * \version 0.2
  */
 
 #include <list>
