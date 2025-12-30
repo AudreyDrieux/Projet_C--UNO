@@ -4,9 +4,9 @@
 /**
  * \file card.hpp
  * \brief définition des cartes
- * \author A. Margot
- * \version 0.1
- * \date 27/11/2025
+ * \author A. Drieux, A. Margot
+ * \version 1.0
+ * \date 27/12/2025
  */
 
 #include <iostream>
