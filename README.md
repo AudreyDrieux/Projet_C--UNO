@@ -64,4 +64,18 @@ Si votre adversaire ne poosède plus qu'une seule carte, vous disposez de 10 sec
   
 #### Fin de la partie
 La partie s'arrête lorsque l'un des deux joueurs ne possède plus aucune carte ou lorsque la pioche est vide.
+
+## Installation de l'interface graphique 
+Télécharger le dossier Uno. Dans ce dossier, vous trouverez :
+1. un dossier dcartes dans lequel se trouve les images des cartes du jeu de Uno ainsi qu'un fichier son utilisé par le programme;
+2. un fichier CMakeLists.txt;
+3. un fichier d'en tête uno.h;
+4. deux fichiers sources uno.cpp et main.cpp;
+5. un fichier uno.ui qui correspond à l'interface de la fenêtre;
+6. trois fichiers pdf : Notice_installation_Qt.pdf, Compilation_et_execution_dans_QtCreator.pdf, Utilisation_programme_uno.pdf.
+
+Pour lancer le programme uno, vous devez dans un premier temps installer le logiciel Qt. Pour ce faire, suiver les instructions indiquées dans le pdf Notice_installation_Qt.pdf.
+Après avoir installé le logiciel Qt, suivre les instructions du pdf Compilation_et_execution_dans_QtCreator.pdf pour compiler et exécuter le programme uno.
+Enfin, une notice d'utilisation détaillée du programme est disponible dans le fichier Utilisation_programme_uno.pdf.
+
   
