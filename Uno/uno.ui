@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fenetre</class>
+ <widget class="QMainWindow" name="Fenetre">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="ztal">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="zordi">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;L'ordinateur a 7 cartes en main&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ztour">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>640</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 11pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A l'ordinateur de donner&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zb">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>180</y>
+      <width>34</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        border-radius: 15px;
+        background-color: rgb(0, 118, 177);
+        border: 2px solid darkyblue;
+        min-width: 30px;
+    min-height: 30 px
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zj">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>180</y>
+      <width>34</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        border-radius: 15px;
+    background-color: rgb(212, 212, 0);
+        border: 2px solid darkyellow;
+        alternate-background-color: rgb(255, 255, 0);
+    min-width: 30px;
+    min-height: 30 px
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zr">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>180</y>
+      <width>34</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        border-radius: 15px;
+        background-color: rgb(157,0, 0);
+    border: 2px solid darkyred;
+    min-width: 30px;
+    min-height: 30 px
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zv">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>180</y>
+      <width>34</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+
+    border-radius: 15px;
+    background-color: rgb(0,100, 0);
+    border: 2px solid darkygreen;
+    min-width: 30px;
+    min-height: 30 px
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zuno">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>110</y>
+      <width>84</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>UNO</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="zavan">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>640</y>
+      <width>31</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="zapres">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>640</y>
+      <width>31</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;Jeu de Uno&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="zpio">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>90</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>91</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zinfo">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>640</y>
+      <width>591</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <fontweight>DemiBold</fontweight>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LayoutDirection::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;
+background-color: rgb(255, 255, 255);
+text-align: left;
+padding-left: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Vous n'avez pas dit Uno ! Vous devez piocher une carte en cliquant ici</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="zcpio">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>250</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;La pioche contient 100 cartes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z0">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cr1.png</normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cr1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>91</width>
+      <height>145</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z1">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z6">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>300</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z8">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z9">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z10">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z11">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z12">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="z13">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>470</y>
+      <width>91</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid dark;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</normaloff>
+      <disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</disabledoff>../../Tutoriels/Fichiers_projet_Uno/fichiers_data_projet_Uno/dcartes/Cxx.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>89</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 11pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pioche&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 11pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Talon&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quit">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::ApplicationExit"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
