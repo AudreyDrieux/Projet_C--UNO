@@ -45,8 +45,4 @@ Card& Card::operator=(const Card& card){
     spec = card.numero();
     color = card.colorcard();
     return *this;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> DeveloppAndrea
