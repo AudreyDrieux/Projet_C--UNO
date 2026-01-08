@@ -24,7 +24,7 @@ add_executable(test_pioche tests/test_Pioche.cpp)
 target_link_libraries(test_pioche card pioche)
 
 add_executable(test_joueur tests/test_Joueur.cpp)
-target_link_libraries(test_joueur card joueur)
+target_link_libraries(test_joueur card joueur pioche)
 
 add_executable(uno_game src/main.cpp)
 target_link_libraries(uno_game PRIVATE card joueur pioche jeu)
