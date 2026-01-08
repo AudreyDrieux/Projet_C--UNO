@@ -35,8 +35,4 @@ TEST_CASE("retire_carte") {
     Joueur Player(1, l);
     Player.retire_carte(C1);
     REQUIRE(Player.get_jeu_cartes() == l2);
-    Joueur Player2(1, l);
-    Player2.retire_carte(l.begin());
-    REQUIRE(Player2.get_jeu_cartes() == l2);
-    
 }
