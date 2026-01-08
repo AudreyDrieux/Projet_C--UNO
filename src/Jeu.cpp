@@ -68,6 +68,8 @@ void Jeu::Partie(){
         }
 
         else if(current_player == 0){
+            std::cout << "\ntalon: ";
+            current_card.affiche();
             Card player = TourPlayer();
             if(player == Card("0","0") ){
                 current_player = 1;
